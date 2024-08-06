@@ -1,0 +1,36 @@
+{
+  "name": "cubonius",
+  "version": "0.1.0",
+  "description": "Open reverse tunnels for SLURM jobs",
+  "keywords": [],
+  "author": "Lea Waller <lea@lea.science>",
+  "license": "GPL-3.0-or-later",
+  "exports": "./build/index.ts",
+  "files": [
+    "build",
+    "src"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "tunnel-spawner": "./build/index.js"
+  },
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "debug": "^4.3.6",
+    "es-main": "^1.3.0",
+    "ssh-config": "^4.4.4",
+    "ssh2": "^1.15.0"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/ssh2": "^1.15.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
